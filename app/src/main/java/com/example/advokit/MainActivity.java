@@ -24,17 +24,18 @@ public class MainActivity extends AppCompatActivity {
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"InBuild",Toast.LENGTH_SHORT);
+                Toast.makeText(MainActivity.this,"InBuild",Toast.LENGTH_SHORT).show();
             }
         });
 
         // google pennding
 
+
         google.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(MainActivity.this,"InBuild",Toast.LENGTH_SHORT);
+                Toast.makeText(MainActivity.this,"InBuild",Toast.LENGTH_SHORT).show();
             }
         });
 
