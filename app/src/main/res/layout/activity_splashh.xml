@@ -10,6 +10,5 @@
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="700dp"
         android:layout_height="wrap_content"
-
-    android:background="@drawable/splash_advokit"/>
+      android:background="@drawable/splash_advokit"/>
 </RelativeLayout>

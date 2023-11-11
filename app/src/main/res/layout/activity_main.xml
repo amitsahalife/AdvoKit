@@ -46,28 +46,33 @@
                     android:text="Welcome"
                     android:textColor="#FF9800"
                     android:textStyle="bold"
-                    android:textSize="40dp"/>
+                    android:textSize="30dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Please login with your information"
                     android:textColor="#FF9800"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="10dp"
                     android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Email Address"
+
+                    android:layout_margin="10dp"
                     android:textSize="20dp"
                     android:textColor="#FF9800"
                     android:textStyle="bold" />
                 <EditText
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="yourmail@gmail.com"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:inputType="textEmailAddress"
                     android:drawableEnd="@drawable/baseline_done_24"
                     />
@@ -77,11 +82,17 @@
                     android:layout_height="wrap_content"
                     android:text="Password"
                     android:textSize="20dp"
+                    android:layout_margin="10dp"
                     android:textColor="#FF9800"
                     android:textStyle="bold" />
                 <EditText
+                    android:id="@+id/pass"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Your Pass"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
                     android:inputType="textPassword"
                     android:drawableEnd="@drawable/baseline_remove_red_eye_24"
                     />
