@@ -12,11 +12,11 @@ import com.example.advokit.dataClass.Item;
 
 import java.util.List;
 
-public class FeedAdapter extends RecyclerView.Adapter<ViewHolder> {
+public class hireAdapter extends RecyclerView.Adapter<ViewHolder> {
     Context context;
     List<Item> items;
 
-    public FeedAdapter(Context context,List<Item>items){
+    public hireAdapter(Context context, List<Item>items){
         this.context = context;
         this.items = items;
     }
@@ -31,10 +31,13 @@ public class FeedAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+    holder.dp.setImageResource(items.get(position).getImage());
         holder.name.setText(items.get(position).getName());
         holder.address.setText(items.get(position).getAddress());
-        holder.distance.setText(items.get(position).getDistacne());
-        holder.hobby.setText(items.get(position).getHobby());
+        holder.degree.setText(items.get(position).getDegree());
+
+       // holder.rating.setImageDrawable(items.get(position).getRating());
         holder.longDes.setText(items.get(position).getDescription());
     }
 

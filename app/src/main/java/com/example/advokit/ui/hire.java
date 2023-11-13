@@ -1,5 +1,6 @@
 package com.example.advokit.ui;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,16 +14,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.advokit.R;
-import com.example.advokit.adapter.FeedAdapter;
+import com.example.advokit.adapter.hireAdapter;
 import com.example.advokit.dataClass.Item;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class feed extends Fragment {
+public class hire extends Fragment {
     RecyclerView recyclerView;
-    public feed() {
+    public hire() {
         // Required empty public constructor
     }
 
@@ -39,8 +40,14 @@ public class feed extends Fragment {
         List<Item> items = new ArrayList<Item>();
         recyclerView = view.findViewById(R.id.recyler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(new FeedAdapter(getContext(),items));
+        recyclerView.setAdapter(new hireAdapter(getContext(),items));
 
-        items.add(new Item(R.drawable.facebook_logo,"Amit Saha","Android Developer","Within 2 KM","Coffee | Coding | Friendship","Hi community! I am open to new connections ☺"));
+      //  items.add(new Item(R.drawable.facebook_logo,"Amit Saha","Android Developer","Within 2 KM","Coffee | Coding | Friendship","Hi community! I am open to new connections ☺"));
+
+       // items.add(new Item(,"amit","ss","ba",R.drawable.five_star,"ht"));
+
+        items.add(new Item(R.drawable.male_one,"Amit Saha","jam Duyar","B.Tech In Criminal"
+                ,5,"im better than kd pathak"
+        ));
     }
 }

@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.advokit.ui.chat;
-import com.example.advokit.ui.feed;
+import com.example.advokit.ui.hire;
 import com.example.advokit.ui.homeFragment;
 
 public class viewPagerMsgAdapter extends FragmentPagerAdapter {
@@ -28,7 +28,7 @@ public class viewPagerMsgAdapter extends FragmentPagerAdapter {
         }
         else
         {
-            return new feed();
+            return new hire();
         }
     }
 

@@ -25,20 +25,20 @@ public class Item {
         this.address = address;
     }
 
-    public String getDistacne() {
-        return distacne;
+    public String getDegree() {
+        return degree;
     }
 
-    public void setDistacne(String distacne) {
-        this.distacne = distacne;
+    public void setDegree(String degree) {
+        this.degree = degree;
     }
 
-    public String getHobby() {
-        return hobby;
+    public int getRating() {
+        return rating;
     }
 
-    public void setHobby(String hobby) {
-        this.hobby = hobby;
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 
     public String getDescription() {
@@ -52,18 +52,24 @@ public class Item {
     int image;
     String name;
     String address;
-    String distacne;
-    String hobby;
+    String degree;
+    int rating;
     String description;
 
-    public Item(int image, String name, String address, String distacne, String hobby, String description) {
+    public Item(int image, String name, String address, String degree, int rating, String description) {
         this.image = image;
         this.name = name;
         this.address = address;
-        this.distacne = distacne;
-        this.hobby = hobby;
+        this.degree = degree;
+        this.rating = rating;
         this.description = description;
     }
+
+
+
+
+
+
 
 
 }
