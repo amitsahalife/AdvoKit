@@ -45,9 +45,10 @@ public class hire extends Fragment {
       //  items.add(new Item(R.drawable.facebook_logo,"Amit Saha","Android Developer","Within 2 KM","Coffee | Coding | Friendship","Hi community! I am open to new connections ☺"));
 
        // items.add(new Item(,"amit","ss","ba",R.drawable.five_star,"ht"));
-
+// TODO VANSHIKA
         items.add(new Item(R.drawable.male_one,"Amit Saha","jam Duyar","B.Tech In Criminal"
                 ,5,"im better than kd pathak"
         ));
+
     }
 }

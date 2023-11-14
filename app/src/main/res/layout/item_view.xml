@@ -1,128 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginTop="10dp"
-    android:layout_height="wrap_content">
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="400dp"
-app:cardMaxElevation="20dp"
-        app:cardCornerRadius="30dp"
-        android:outlineSpotShadowColor="@color/black"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp">
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-
-
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="20dp"
+    android:background="#FDDEAF"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
             <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+
                 android:id="@+id/imageView"
-                android:layout_width="75dp"
-
-                android:layout_height="75dp"
-                android:elevation="200dp"
-
-                android:layout_centerVertical="true"
-                android:layout_margin="20dp"
-                android:padding="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_margin="20dp"
-
-
-                android:text="Amit Saha"
-
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.042"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.087" />
-
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Durgapur | Strudent"
-                app:layout_constraintHorizontal_bias="0.429"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/name" />
-
+                android:src="@drawable/male_ten"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:shapeAppearanceOverlay="@color/cardview_dark_background"/>
 
             <ImageView
                 android:id="@+id/rating"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
-                android:layout_margin="30dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="28dp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/five_star"
-                app:layout_constraintEnd_toEndOf="@+id/distance"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-            <TextView
-                android:id="@+id/longDes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+        </LinearLayout>
 
-                android:padding="20dp"
-                android:text="Hi community "
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:textSize="15sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.101"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rating" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/name"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="20sp"
+            android:text="Amit Saha"
+            android:textStyle="bold"
+            android:layout_marginTop="115dp"
+            android:layout_marginStart="15dp"
 
-            <TextView
-                android:id="@+id/distance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_marginTop="12dp"
-                android:text="Within 2.3km"
-                android:textSize="13sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView"
-                app:layout_constraintHorizontal_bias="0.328"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            />
+
+        <TextView
+            android:layout_width="1000dp"
+            android:layout_height="30dp"
+            android:id="@+id/address"
+            android:textSize="15sp"
+            android:text="Durgapur | Strudent"
+            android:textColor="@color/black"
+            app:layout_constraintHorizontal_bias="0.429"
+            android:layout_marginTop="20sp"
+            android:layout_toEndOf="@id/name"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/degree"
+            android:textSize="10sp"
+            android:text="Within 2.3km"
+
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/name"
+            android:layout_marginTop="50dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/longDes"
+            android:textSize="15sp"
+            android:text="Hi community "
+            android:textStyle="bold"
+
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="130dp"
+            />
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
-
-
-
-</RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

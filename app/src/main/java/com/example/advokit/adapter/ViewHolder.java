@@ -18,8 +18,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
         dp = itemView.findViewById(R.id.imageView);
         name = itemView.findViewById(R.id.name);
-        degree = itemView.findViewById(R.id.distance);
-        address = itemView.findViewById(R.id.textView);
+        degree = itemView.findViewById(R.id.degree);
+        address = itemView.findViewById(R.id.address);
 rating = itemView.findViewById(R.id.rating);
         longDes = itemView.findViewById(R.id.longDes);
 
