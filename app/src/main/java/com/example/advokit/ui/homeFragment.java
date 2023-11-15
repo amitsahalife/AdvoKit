@@ -46,7 +46,7 @@ public class homeFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new MyAdapter(getContext(),data));
 
-        // TODO @PAROMITA
+
         // photo strictly land
   // data.add(new DataClass("Narenda Modi","vatar",R.drawable.male_four));
 //data.add (new DataClass("vatar",))
@@ -57,6 +57,8 @@ data.add(new DataClass("Criminal Case","SAibal bose khuni",R.drawable.dummy));
 
 
                 ,R.drawable.dummy_two));
+// syntax (title, description , then photo) (photo landscape mandatory )
+        // TODO @VANSHIKA
 
     }
 }

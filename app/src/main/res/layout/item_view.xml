@@ -52,7 +52,6 @@
             android:textSize="20sp"
             android:text="Amit Saha"
             android:textStyle="bold"
-
             android:layout_marginTop="115dp"
             android:layout_marginStart="15dp"
 
