@@ -48,7 +48,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
         holder.recImage.setImageResource(dataList.get(position).getDataImage());
         holder.recTitle.setText(dataList.get(position).getDataTitle());
         holder.recDesc.setText(dataList.get(position).getDataDesc());
-        holder.recLang.setText(dataList.get(position).getDataLang());
+
 
         holder.recCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +82,7 @@ class MyViewHolder extends RecyclerView.ViewHolder{
         recImage = itemView.findViewById(R.id.recImage);
         recTitle = itemView.findViewById(R.id.recTitle);
         recDesc = itemView.findViewById(R.id.recDesc);
-        recLang = itemView.findViewById(R.id.recLang);
+
         recCard = itemView.findViewById(R.id.recCard);
     }
 }

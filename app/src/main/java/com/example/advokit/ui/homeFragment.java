@@ -47,7 +47,16 @@ public class homeFragment extends Fragment {
         recyclerView.setAdapter(new MyAdapter(getContext(),data));
 
         // TODO @PAROMITA
-   data.add(new DataClass("Narenda Modi","vatar","Java",R.drawable.male_four));
+        // photo strictly land
+  // data.add(new DataClass("Narenda Modi","vatar",R.drawable.male_four));
+//data.add (new DataClass("vatar",))
+data.add(new DataClass("Criminal Case","SAibal bose khuni",R.drawable.dummy));
+        data.add(new DataClass("BAL BOSE DEAD OR ALIVE?","A 25 Year old man shot dead \n" +
+                "A surprising case has come from the narimore, Burdwan. 50 year old Mother in law fell in love"
+              +  "with her son in law , The duo ran away after getting the father in law heavily intoxicated"
+
+
+                ,R.drawable.dummy_two));
 
     }
 }

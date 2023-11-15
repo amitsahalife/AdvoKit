@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/detailTitle"
         android:layout_marginTop="14dp"
+        android:textStyle="bold"
         android:text="Title"
         android:textSize="24sp"
         android:layout_gravity="center"
