@@ -45,7 +45,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.recImage.setImageResource(dataList.get(position).getDataImage());
+         holder.recImage.setImageResource(dataList.get(position).getDataImage());
         holder.recTitle.setText(dataList.get(position).getDataTitle());
         holder.recDesc.setText(dataList.get(position).getDataDesc());
 
@@ -54,7 +54,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, details.class);
-                intent.putExtra("Image", dataList.get(holder.getAdapterPosition()).getDataImage());
+             intent.putExtra("Image", dataList.get(holder.getAdapterPosition()).getDataImage());
                 intent.putExtra("Title", dataList.get(holder.getAdapterPosition()).getDataTitle());
                 intent.putExtra("Desc", dataList.get(holder.getAdapterPosition()).getDataDesc());
 

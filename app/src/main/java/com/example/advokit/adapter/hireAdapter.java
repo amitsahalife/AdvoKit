@@ -44,7 +44,7 @@ public class hireAdapter extends RecyclerView.Adapter<ViewHolder> {
         holder.chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //todo text change
+                //todo text change 1
                 Toast.makeText(context.getApplicationContext(), "Sorry currently we are working on this feature It will release soon",Toast.LENGTH_LONG).show();
             }
         });

@@ -11,12 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.advokit.R;
 public class chat extends Fragment{
-LottieAnimationView work;
+LottieAnimationView work,ai;
+TextView heading;
 ImageButton button;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,6 +32,8 @@ ImageButton button;
         super.onViewCreated(view, savedInstanceState);
         work = view.findViewById(R.id.working);
         button = view.findViewById(R.id.send_btn);
+        ai = view.findViewById(R.id.hlo);
+        heading = view.findViewById(R.id.heading);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +42,10 @@ ImageButton button;
               //  work.getVisibility();
                // work.setVisibility(1);
                 work.setVisibility(View.VISIBLE);
-                Toast.makeText(getContext(),"working",Toast.LENGTH_SHORT).show();
+ai.setVisibility(View.GONE);
+heading.setVisibility(View.GONE);
+                // todo text change 2
+                Toast.makeText(getContext(),"Sorry currently we are working on this feature It will release soon",Toast.LENGTH_SHORT).show();
             }
         });
 

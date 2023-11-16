@@ -22,6 +22,27 @@ app:lottie_rawRes="@raw/animation"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"/>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/hlo"
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/hlo" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_above="@id/hlo"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:text="Hi I Am Your AI Legal Asistant .. How can i help You"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
