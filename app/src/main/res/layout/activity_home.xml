@@ -4,12 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#E8DC71"
     android:layout_height="match_parent"
     tools:context=".Home">
 
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab"
+        android:backgroundTint="#5A1B02"
+        app:tabIndicatorColor="@color/white"
+        app:tabTextColor="#EFBA0D"
+        app:tabRippleColor="#E8DC71"
+        app:tabSelectedTextColor="#EFBA0D"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

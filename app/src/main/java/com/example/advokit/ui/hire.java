@@ -40,12 +40,12 @@ public class hire extends Fragment {
         List<Item> items = new ArrayList<Item>();
         recyclerView = view.findViewById(R.id.recyler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(new hireAdapter(getContext(),items));
+        recyclerView.setAdapter(new hireAdapter(getContext(), items));
 
-      //  items.add(new Item(R.drawable.facebook_logo,"Amit Saha","Android Developer","Within 2 KM","Coffee | Coding | Friendship","Hi community! I am open to new connections ☺"));
+        //  items.add(new Item(R.drawable.facebook_logo,"Amit Saha","Android Developer","Within 2 KM","Coffee | Coding | Friendship","Hi community! I am open to new connections ☺"));
 
-       // items.add(new Item(,"amit","ss","ba",R.drawable.five_star,"ht"));
-// TODO VANSHIKA
+
+
         items.add(new Item(R.drawable.male_two,"Aarav Sharma","123 Sunshine Avenue,\n" +
                 "Mumbai, Maharashtra 400001","Bachelor of Laws (LLB)"
                 ,4,"Accomplished Legal Advisor with a comprehensive background in corporate law and contract negotiation."
@@ -62,7 +62,7 @@ public class hire extends Fragment {
         items.add(new Item(R.drawable.female_nine,"Ishita Chatterjee","3444 Zenith Street,\n" +
                 "Ambala, Haryana 133001","Bachelor of Laws (LLB) in Employment Law\n" +
                 "\n"
-                ,4,"Results-driven Legal Advisor with a proven ability to navigate complex legal landscapes."
+                ,R.drawable.rating_four,"Results-driven Legal Advisor with a proven ability to navigate complex legal landscapes."
         ));
         items.add(new Item(R.drawable.male_five,"Bhavya Verma","3555 Serendipity Circle,\n" +
                 "Tirunelveli, Tamil Nadu 627001\n","Master of Laws (LLM) in Constitutional Law\n" +
@@ -87,17 +87,17 @@ public class hire extends Fragment {
         items.add(new Item(R.drawable.male_four,"Dinesh Kumar Yadav","2111 Serenity Road,\n" +
                 "Madurai, Tamil Nadu 625001\n" +
                 "\n","Bachelor of Laws (LLB) with a specialization in Health Law"
-                ,4,"Proactive Legal Advocate with expertise in commercial litigation and arbitration."
+                ,R.drawable.rating_four,"Proactive Legal Advocate with expertise in commercial litigation and arbitration."
         ));
         items.add(new Item(R.drawable.male_six,"Vivek Gupta","2999 Peaceful Lane,\n" +
                 "Srinagar, Jammu and Kashmir 190001\n" +
                 "\n","Legal Studies Certificate with a specialization in Cybersecurity Law"
                 ,4,"Accomplished Legal Specialist known for providing clear and practical legal advice.\n" ));
-                items.add(new Item(R.drawable.male_three,"Omkar Singh Rathore","3222 Tranquility Road, Nellore, Andhra Pradesh 524001\n" +
-                        "\n","Master of Laws (LLM) in Tax Law\n" +
-                        "\n",
-                        4,"Detail-oriented Legal Consultant experienced in regulatory affairs."
-                ));
+        items.add(new Item(R.drawable.male_three,"Omkar Singh Rathore","3222 Tranquility Road, Nellore, Andhra Pradesh 524001\n" +
+                "\n","Master of Laws (LLM) in Tax Law\n" +
+                "\n",
+                4,"Detail-oriented Legal Consultant experienced in regulatory affairs."
+        ));
         items.add(new Item(R.drawable.female_four,"Devika Reddy","3291 Tranquility Road, Nellore, Andhra Pradesh 524001\n" +
                 "\n","Bachelor of Arts in Law (BAL) with a concentration in Environmental Law"
                 ,4,"Proactive Legal Advocate with expertise in commercial litigation and arbitration.\n" +
@@ -106,7 +106,7 @@ public class hire extends Fragment {
         items.add(new Item(R.drawable.male_six,"Dinesh Kumar Yadav","888 Zenith Street,\n" +
                 "Pune, Maharashtra 411001\n","Juris Doctor (JD) with a focus on Technology Law\n" +
                 "\n"
-                ,4,"Knowledgeable Legal Advisor specializing in real estate transactions and property law.\n" +
+                ,R.drawable.rating_four,"Knowledgeable Legal Advisor specializing in real estate transactions and property law.\n" +
                 "\n"
         ));
         items.add(new Item(R.drawable.feamle_six,"Prisha Mehra","667 Serendipity Circle, Thane, Maharashtra 400001\n" +
@@ -173,7 +173,7 @@ public class hire extends Fragment {
         items.add(new Item(R.drawable.male_two,"Vivaan Singh Choudhary","556 Blissful Boulevard,\n" +
                 "Vadodara, Gujarat 390001\n" +
                 "\n","Legal Studies Certificate in Real Estate Law"
-                ,4,"Results-driven Legal Advocate adept at representing clients in negotiations and court proceedings.\n" +
+                ,R.drawable.rating_four,"Results-driven Legal Advocate adept at representing clients in negotiations and court proceedings.\n" +
                 "\n"
         ));
         items.add(new Item(R.drawable.female_one,"Aditi Sharma","1666 Serendipity Circle,\n" +
@@ -313,3 +313,4 @@ public class hire extends Fragment {
 
     }
 }
+

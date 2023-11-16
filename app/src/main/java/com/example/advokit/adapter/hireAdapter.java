@@ -2,7 +2,9 @@ package com.example.advokit.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,9 +38,16 @@ public class hireAdapter extends RecyclerView.Adapter<ViewHolder> {
         holder.name.setText(items.get(position).getName());
         holder.address.setText(items.get(position).getAddress());
         holder.degree.setText(items.get(position).getDegree());
-
-       // holder.rating.setImageDrawable(items.get(position).getRating());
+//holder.rating.setImageResource(items.get(position).getRating());
+    //    holder.rating.setImageDrawable(items.get(position).getRating());
         holder.longDes.setText(items.get(position).getDescription());
+        holder.chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //todo text change
+                Toast.makeText(context.getApplicationContext(), "Sorry currently we are working on this feature It will release soon",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override

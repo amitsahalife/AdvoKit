@@ -11,7 +11,7 @@ import com.example.advokit.R;
 
 
 public class ViewHolder extends RecyclerView.ViewHolder {
-    ImageView dp,rating;
+    ImageView dp,rating,chat;
     TextView name, address,degree,longDes;
     public ViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -22,6 +22,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         address = itemView.findViewById(R.id.address);
 rating = itemView.findViewById(R.id.rating);
         longDes = itemView.findViewById(R.id.longDes);
+        chat = itemView.findViewById(R.id.chat);
 
     }
 }

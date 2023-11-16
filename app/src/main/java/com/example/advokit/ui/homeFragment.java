@@ -55,10 +55,13 @@ data.add(new DataClass("Criminal Case","SAibal bose khuni",R.drawable.dummy));
                 "A surprising case has come from the narimore, Burdwan. 50 year old Mother in law fell in love"
               +  "with her son in law , The duo ran away after getting the father in law heavily intoxicated"
 
-
                 ,R.drawable.dummy_two));
 // syntax (title, description , then photo) (photo landscape mandatory )
         // TODO @VANSHIKA
+
+     //   data.add(new DataClass("title of the case","description (try to write first line then use slash n it will be better",R.drawable.photo));
+
+
 
     }
 }
