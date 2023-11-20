@@ -82,7 +82,6 @@ class MyViewHolder extends RecyclerView.ViewHolder{
         recImage = itemView.findViewById(R.id.recImage);
         recTitle = itemView.findViewById(R.id.recTitle);
         recDesc = itemView.findViewById(R.id.recDesc);
-
         recCard = itemView.findViewById(R.id.recCard);
     }
 }

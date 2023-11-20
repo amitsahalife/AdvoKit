@@ -1,10 +1,11 @@
 package com.example.advokit.dataClass;
 
 
+
 public class DataClass {
 
     private String dataTitle;
-    private String dataDesc;
+    private int dataDesc;
 
     private int dataImage;
 
@@ -12,7 +13,7 @@ public class DataClass {
         return dataTitle;
     }
 
-    public String getDataDesc() {
+    public int getDataDesc() {
         return dataDesc;
     }
 
@@ -22,10 +23,9 @@ public class DataClass {
         return dataImage;
     }
 
-    public DataClass(String dataTitle, String dataDesc, int dataImage) {
+    public DataClass(String dataTitle, int dataDesc, int dataImage) {
         this.dataTitle = dataTitle;
         this.dataDesc = dataDesc;
-
         this.dataImage = dataImage;
     }
 }

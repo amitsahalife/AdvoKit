@@ -21,7 +21,7 @@ public class details extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
-            detailDesc.setText(bundle.getString("Desc"));
+            detailDesc.setText(bundle.getInt("Desc"));
             detailImage.setImageResource(bundle.getInt("Image"));
             detailTitle.setText(bundle.getString("Title"));
         }
